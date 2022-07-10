@@ -1,7 +1,8 @@
 import cv2
 
 # open image using cv
-image = cv2.imread('image.jpeg')
+PATH = 'image.jpeg'      # your path
+image = cv2.imread(PATH)
 # formula for negative image
 L = 256   # Number of Levels
 negativeImage = (L-1)-image  # negative image
